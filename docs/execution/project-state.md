@@ -4,7 +4,7 @@
 MVP Todo App
 
 ## Current Status
-Architecture prepared and initial slice plan defined.
+Backend bootstrap and persistence foundation for Slice 1 is in progress.
 
 ## Active Slice
 Slice 1 - Backend Todo Read/Write Foundation
