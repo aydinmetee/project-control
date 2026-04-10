@@ -7,7 +7,7 @@ body:
     attributes:
       label: Bug Summary
       description: What is broken?
-      placeholder: Example: Completed todos are still shown as active in the list.
+      placeholder: Example- Completed todos are still shown as active in the list.
     validations:
       required: true
 
@@ -50,7 +50,7 @@ body:
     id: expected-result
     attributes:
       label: Expected Result
-      placeholder: Example: Completed todo should remain completed after refresh.
+      placeholder: Example- Completed todo should remain completed after refresh.
     validations:
       required: true
 
@@ -58,7 +58,7 @@ body:
     id: actual-result
     attributes:
       label: Actual Result
-      placeholder: Example: Todo returns to active state after refresh.
+      placeholder: Example- Todo returns to active state after refresh.
     validations:
       required: true
 
