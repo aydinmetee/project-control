@@ -65,3 +65,26 @@ Todo:
 - Notifications
 - Advanced search/filtering
 - Deployment automation
+
+## Initial Technology Stack
+
+### Backend
+- Java 17
+- Spring Boot
+- Maven
+- Spring Web
+- Spring Data JPA
+- H2 database for initial MVP development
+- JUnit-based automated tests
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- Basic component-based UI structure
+- API communication through a dedicated client/service layer
+
+### Reasoning
+- The goal of the MVP is to validate the AI-driven delivery pipeline with minimum setup friction.
+- The initial stack should be simple enough for fast iteration.
+- More advanced infrastructure decisions can be introduced after the MVP flow is working end-to-end.
