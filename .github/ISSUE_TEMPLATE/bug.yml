@@ -1,12 +1,84 @@
 name: Bug
-description: Report a bug
+description: Report a bug found during review, QA, or manual validation
 title: "[BUG] "
 body:
   - type: textarea
     id: summary
     attributes:
-      label: Summary
+      label: Bug Summary
       description: What is broken?
-      placeholder: Describe the bug
+      placeholder: Example: Completed todos are still shown as active in the list.
     validations:
       required: true
+
+  - type: dropdown
+    id: affected-repo
+    attributes:
+      label: Affected Repository
+      options:
+        - project-backend
+        - project-frontend
+        - project-control
+        - Multiple
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-issue-pr
+    attributes:
+      label: Related Issue / PR
+      description: Link the related task and PR if known
+      placeholder: |
+        - Issue: #34
+        - PR: backend#12
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Open todo list
+        2. Mark an item as completed
+        3. Refresh the page
+        4. Observe the item state
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected Result
+      placeholder: Example: Completed todo should remain completed after refresh.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-result
+    attributes:
+      label: Actual Result
+      placeholder: Example: Todo returns to active state after refresh.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, screenshots, response body, test output
+      placeholder: Paste evidence here
+    validations:
+      required: false
