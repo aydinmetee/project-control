@@ -4,7 +4,7 @@
 MVP Todo App
 
 ## Current Status
-Backend bootstrap and persistence foundation for Slice 1 is in progress.
+Backend API implementation for todo create and list flow is in progress.
 
 ## Active Slice
 Slice 1 - Backend Todo Read/Write Foundation
