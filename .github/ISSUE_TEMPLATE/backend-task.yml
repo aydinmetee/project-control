@@ -111,7 +111,7 @@ body:
   - type: dropdown
     id: owner-decision-needed
     attributes:
-      label: Human Decision Needed
+      label: Owner Decision Needed
       description: Is there any ambiguity that requires PO input?
       options:
         - "No"

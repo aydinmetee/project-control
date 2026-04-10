@@ -23,7 +23,7 @@ The system consists of three main parts:
 3. Backend and frontend tasks are created from the active slice.
 4. Backend and frontend repositories implement their own tasks.
 5. Pull requests are reviewed and validated.
-6. Human approval happens at PR stage.
+6. Owner approval happens at PR stage.
 
 ## Backend Responsibilities
 - Manage todo data
