@@ -1,0 +1,85 @@
+name: Epic
+description: Product or technical epic for a larger scope of work
+title: "[EPIC] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a larger scope that will later be split into slices/tasks.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What is the main goal of this epic?
+      placeholder: Example: Deliver the MVP Todo management flow end-to-end.
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value
+      description: Why is this epic important?
+      placeholder: Example: Users need to create, update and complete todos to use the core product value.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: In Scope
+      description: What is included in this epic?
+      placeholder: |
+        - Todo create
+        - Todo list
+        - Todo complete
+        - Basic responsive UI
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly excluded?
+      placeholder: |
+        - Notifications
+        - Multi-user collaboration
+        - Advanced analytics
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will we know this epic is done?
+      placeholder: |
+        - User can create a todo
+        - User can list todos
+        - User can mark a todo as completed
+        - Backend and frontend PRs are merged
+    validations:
+      required: true
+
+  - type: textarea
+    id: linked-docs
+    attributes:
+      label: Linked Docs
+      description: Related docs from project-control
+      placeholder: |
+        - docs/product/vision.md
+        - docs/product/mvp-scope.md
+        - docs/product/business-rules.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Optional additional notes
+      placeholder: Constraints, assumptions, risks, dependencies
+    validations:
+      required: false

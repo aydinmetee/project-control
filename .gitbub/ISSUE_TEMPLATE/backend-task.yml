@@ -1,0 +1,141 @@
+name: Backend Task
+description: Backend implementation task for the backend repository
+title: "[BE] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Create a backend task packet.
+        This issue should be implementation-focused and testable.
+
+  - type: input
+    id: parent-epic
+    attributes:
+      label: Parent Epic
+      description: Related epic issue number or title
+      placeholder: "#12 [EPIC] MVP Todo App"
+    validations:
+      required: true
+
+  - type: input
+    id: target-repo
+    attributes:
+      label: Target Repository
+      description: Backend repository name
+      placeholder: "project-backend"
+      value: "project-backend"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this backend task solve?
+      placeholder: Example: There is no API to create and list todos.
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should exist after this task is completed?
+      placeholder: Example: A REST API for creating and listing todos is implemented.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Write concrete and testable criteria
+      placeholder: |
+        - POST /api/todos creates a todo
+        - GET /api/todos returns todo list
+        - Validation errors return proper status codes
+        - Hidden/deleted items are not listed
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: Explicitly excluded from this task
+      placeholder: |
+        - Frontend UI changes
+        - Authentication
+        - Reminder notifications
+    validations:
+      required: true
+
+  - type: textarea
+    id: touched-modules
+    attributes:
+      label: Touched Modules
+      description: Which backend modules/layers are expected to be affected?
+      placeholder: |
+        - controller
+        - service
+        - repository
+        - entity
+        - dto
+    validations:
+      required: true
+
+  - type: textarea
+    id: linked-docs
+    attributes:
+      label: Linked Docs
+      description: Only the minimum required docs
+      placeholder: |
+        - docs/product/business-rules.md
+        - docs/architecture/system-design.md
+        - docs/execution/slice-plan.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-tests
+    attributes:
+      label: Expected Tests
+      description: Which tests should be added or updated?
+      placeholder: |
+        - Unit tests for service logic
+        - Integration tests for REST endpoints
+        - Validation tests for bad requests
+    validations:
+      required: true
+
+  - type: dropdown
+    id: owner-decision-needed
+    attributes:
+      label: Human Decision Needed
+      description: Is there any ambiguity that requires PO input?
+      options:
+        - No
+        - Yes
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Any blocking dependency?
+      placeholder: Example: Needs frontend contract to be finalized / No dependency
+    validations:
+      required: true
+
+  - type: textarea
+    id: done-evidence
+    attributes:
+      label: Done Evidence Expected
+      description: What evidence must exist before review?
+      placeholder: |
+        - PR opened
+        - Tests added/updated
+        - Acceptance criteria mapped in PR description
+    validations:
+      required: true
