@@ -12,7 +12,7 @@ body:
     attributes:
       label: Objective
       description: What is the main goal of this epic?
-      placeholder: Example: Deliver the MVP Todo management flow end-to-end.
+      placeholder: Example- Deliver the MVP Todo management flow end-to-end.
     validations:
       required: true
 
@@ -21,7 +21,7 @@ body:
     attributes:
       label: Business Value
       description: Why is this epic important?
-      placeholder: Example: Users need to create, update and complete todos to use the core product value.
+      placeholder: Example- Users need to create, update and complete todos to use the core product value.
     validations:
       required: true
 
