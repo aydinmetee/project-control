@@ -8,7 +8,7 @@ body:
         Create a backend task packet.
         This issue should be implementation-focused and testable.
 
-  - type: input
+  - type: textarea
     id: parent-epic
     attributes:
       label: Parent Epic
@@ -17,7 +17,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: target-repo
     attributes:
       label: Target Repository
